@@ -14,6 +14,7 @@ public class PaperTest {
     public void setup() {
         subject = new Paper();
     }
+
     @Test
     public void textShouldBeStoredInAPaper() {
         subject.add("text");
