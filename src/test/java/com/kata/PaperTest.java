@@ -19,6 +19,7 @@ public class PaperTest {
         subject.add("text");
         assertThat(subject.getText(), is("text"));
     }
+
     @Test
     public void textShouldBeAddedToPaper() {
         subject.add("first text");
@@ -26,5 +27,10 @@ public class PaperTest {
 
         subject.add(" more text");
         assertThat(subject.getText(), is("first text more text"));
+    }
+
+    @Test
+    public void textShouldBeEmptyOnNewPaper() {
+        assertThat(subject.getText(), is(""));
     }
 }
