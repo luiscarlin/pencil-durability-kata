@@ -1,10 +1,17 @@
 package com.kata;
 
 public class Paper {
-    public void add(String text) {
+    private String text;
+
+    Paper() {
+        text = new String();
     }
 
-    public Object getText() {
-        return "text";
+    public void add(String text) {
+        this.text += text;
+    }
+
+    public String getText() {
+        return text;
     }
 }
