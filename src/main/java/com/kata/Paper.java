@@ -3,7 +3,7 @@ package com.kata;
 public class Paper {
     private String text;
 
-    Paper() {
+    public Paper() {
         text = new String();
     }
 
